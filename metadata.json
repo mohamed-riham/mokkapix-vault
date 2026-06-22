@@ -1,0 +1,6 @@
+{
+  "name": "MokkaPix Vault",
+  "description": "MokkaPix Vault simplifies discovering, copying, and sharing highly-curated image generation prompts. Created by Mohamed Rihan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

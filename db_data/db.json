@@ -1,0 +1,49 @@
+{
+  "prompts": [
+    {
+      "id": "sample-1",
+      "title": "Cyberpunk Warrior",
+      "slug": "cyberpunk-warrior",
+      "image_url": "/images/cyberpunk_warrior.jpg",
+      "prompt_text": "A futuristic cyberpunk warrior standing in a neon city, cinematic lighting, ultra realistic, highly detailed armor, realistic photography, 8K",
+      "ai_model": "Flux Pro",
+      "category": "Fantasy",
+      "tags": [
+        "cyberpunk",
+        "warrior",
+        "neon",
+        "realistic",
+        "8k"
+      ],
+      "views": 129,
+      "copy_count": 42,
+      "featured": true,
+      "created_at": "2026-06-20T10:00:00.000Z",
+      "updated_at": "2026-06-20T10:00:00.000Z"
+    },
+    {
+      "id": "sample-2",
+      "title": "Luxury Car Advertisement",
+      "slug": "luxury-car-advertisement",
+      "image_url": "/images/luxury_sports_car.jpg",
+      "prompt_text": "A luxury sports car on a futuristic road, dramatic cinematic lighting, premium advertisement photography, ultra realistic details",
+      "ai_model": "Midjourney",
+      "category": "Product Photography",
+      "tags": [
+        "car",
+        "luxury",
+        "advertisement",
+        "cinematic"
+      ],
+      "views": 245,
+      "copy_count": 90,
+      "featured": true,
+      "created_at": "2026-06-21T12:00:00.000Z",
+      "updated_at": "2026-06-21T12:00:00.000Z"
+    }
+  ],
+  "watermark": {
+    "enabled": true,
+    "text": "MokkaPix Vault"
+  }
+}
