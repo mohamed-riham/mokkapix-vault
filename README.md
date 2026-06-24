@@ -111,12 +111,14 @@ To run the production deployment, execute:
 npm run start
 ```
 
-### Deploying to Platforms (Vercel, Render, Heroku)
+### Deploying to Platforms (Render, Cloud Run, Vercel)
 
-#### Render / Fly.io / Custom Node Hosts:
-- **Build Command**: `npm run build`
-- **Start Command**: `npm run start`
-- **Environment Variables**: Define `ADMIN_USERNAME`, `ADMIN_PASSWORD`, `SESSION_SECRET`, and `APP_URL` inside your platform's Environment Settings dashboard.
+#### Render Deployment (Highly Recommended):
+MokkaPix Vault includes a zero-config `render.yaml` Blueprint specification.
+1. Push this code to your GitHub Repository.
+2. In your [Render Dashboard](https://dashboard.render.com), click **New +** -> **Blueprint**.
+3. Connect your repository, enter your custom credentials/API keys when prompted, and deploy instantly!
+4. For detailed manual setups, persistent storage disks, and deployment options, please read our dedicated [**DEPLOYMENT.md Manual**](./DEPLOYMENT.md).
 
 #### Vercel & Serverless Architectures:
 Because serverless filesystems are ephemeral (read-only restarts), configure MokkaPix Vault's database schema inside standard external adapters if persistent long-term uploads are required. Our modular database class inside `/src/server/db.ts` integrates with any persistence layer.

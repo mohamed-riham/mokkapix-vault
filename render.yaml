@@ -1,0 +1,36 @@
+# ==========================================
+# Render Blueprint Configuration
+# ==========================================
+services:
+  - type: web
+    name: mokkapix-vault
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: ADMIN_USERNAME
+        sync: false
+        placeholder: "Set your admin login username (e.g., admin)"
+      - key: ADMIN_PASSWORD
+        sync: false
+        placeholder: "Set your secure admin password"
+      - key: SESSION_SECRET
+        sync: false
+        placeholder: "Enter a long, random key to secure sessions"
+      - key: GEMINI_API_KEY
+        sync: false
+        placeholder: "Paste your Google Gemini API Key"
+      - key: APP_URL
+        sync: false
+        placeholder: "Your deployed Render URL (optional, e.g. https://mokkapix-vault.onrender.com)"
+
+    # Persistent Disk support (Uncomment if deploying on Render Starter plan or above)
+    # disk:
+    #   name: mokkapix-storage
+    #   mountPath: /app/db_data
+    #   sizeGB: 1
